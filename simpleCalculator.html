@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Calculator</title>
+</head>
+<body>
+    <input id="value1" type="number" placeholder="Enter number">
+    <input id="value2" type="number" placeholder="Enter number">
+    <br>
+    <button onclick="executeSum()">+ (Sum)</button>
+    <button onclick="executeSubtract()">- (Subtract)</button>
+    <button onclick="executeMultiply()">* (Multiply)</button>
+    <button onclick="executeDivide()">/ (Divide)</button>
+   <br>
+   <p id="result"></p>
+</body>
+
+<script>
+    function executeSum(){
+        let firstNumber = Number(document.getElementById('value1').value);
+        let secondNumber = Number(document.getElementById('value2').value);
+        let sum = firstNumber + secondNumber;
+        document.getElementById('result').innerText = "result: " + sum;
+    }
+    function executeSubtract(){
+        let firstNumber = Number(document.getElementById('value1').value);
+        let secondNumber = Number(document.getElementById('value2').value);
+        let sum = firstNumber - secondNumber;
+        document.getElementById('result').innerText = "result: " + sum;
+    }
+    function executeMultiply(){
+        let firstNumber = Number(document.getElementById('value1').value);
+        let secondNumber = Number(document.getElementById('value2').value);
+        let sum = firstNumber * secondNumber;
+        document.getElementById('result').innerText = "result: " + sum;
+    }
+    function executeDivide(){
+        let firstNumber = Number(document.getElementById('value1').value);
+        let secondNumber = Number(document.getElementById('value2').value);
+        let sum = firstNumber / secondNumber;
+        document.getElementById('result').innerText = "result: " + sum;
+    }
+</script>
+</html>
